@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gair Legal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            900: '#0a192f',
+                            800: '#112240',
+                            700: '#233554',
+                        },
+                        gold: {
+                            400: '#C5A059',
+                            500: '#B38B42',
+                            600: '#967332',
+                        },
+                        accent: {
+                            cyan: '#00A9CA',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+        window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        .hero-gradient {
+            background: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.4));
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased overflow-x-hidden">
+
+    <!-- Header Section -->
+    <header id="header" class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 transition-all duration-300">
+        <div class="max-w-[1440px] mx-auto px-8 md:px-12 h-24 flex items-center justify-between">
+            <!-- Logo Area -->
+            <div class="flex-shrink-0">
+                <a href="#" class="block h-16 w-auto flex items-center">
+                    <img src="https://devshorifultechnosys.com/wp-content/uploads/2026/01/GairLegal-Logo-1.png" alt="Gair Legal" class="h-20 w-auto object-contain">
+                </a>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="#" class="text-sm font-medium text-gray-600 hover:text-gold-500 transition-colors uppercase tracking-wide">Home</a>
+                <a href="#" class="text-sm font-medium text-navy-900 hover:text-gold-500 transition-colors uppercase tracking-wide border-b-2 border-gold-500 pb-1">About Us</a>
+                <a href="#expertise" class="text-sm font-medium text-gray-600 hover:text-gold-500 transition-colors uppercase tracking-wide">Expertise</a>
+                <a href="#team" class="text-sm font-medium text-gray-600 hover:text-gold-500 transition-colors uppercase tracking-wide">Our Team</a>
+                <a href="#locations" class="text-sm font-medium text-gray-600 hover:text-gold-500 transition-colors uppercase tracking-wide">Locations</a>
+                <a href="#contact" class="px-6 py-3 bg-navy-900 text-white text-sm font-medium rounded-sm hover:bg-gold-500 transition-all duration-300 uppercase tracking-wider shadow-lg">
+                    Contact Us
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="lg:hidden text-navy-900 text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about-hero" class="relative w-full h-[600px] flex items-center justify-center overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img class="w-full h-full object-cover" src="https://devshorifultechnosys.com/wp-content/uploads/2026/01/Integrity-loyalty-dedication-a-1.png" alt="panoramic view of sydney harbour bridge and opera house at sunrise, soft golden light, professional corporate photography style, high resolution, calm water" />
+            <div class="absolute inset-0 bg-navy-900/60 mix-blend-multiply"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-transparent"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-[1440px] w-full mx-auto px-8 md:px-12 pt-20 text-center">
+            <div class="inline-block px-3 py-1 mb-6 border border-gold-400 bg-white/5 backdrop-blur-md">
+                <span class="text-gold-400 text-xs font-bold tracking-[0.2em] uppercase">Since 2011</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6 drop-shadow-lg">
+                Our Story & <span class="text-gold-400 italic font-light">Values</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-0 leading-relaxed max-w-2xl mx-auto font-light">
+                Built on a foundation of integrity, loyalty, and unwavering dedication to superior client service.
+            </p>
+        </div>
+    </section>
+
+    <!-- Introduction / Mission -->
+    <section id="intro" class="py-24 bg-white relative">
+        <div class="max-w-[1440px] mx-auto px-8 md:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h4 class="text-accent-cyan font-bold uppercase tracking-widest text-sm mb-4">Who We Are</h4>
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-navy-900 mb-8 leading-tight">
+                        A Progressive Force in <br> <span class="text-gold-500">Legal Excellence</span>
+                    </h2>
+                    <div class="space-y-6 text-lg text-gray-600 leading-relaxed font-light">
+                        <p>
+                            Gair Legal is a highly specialised Australian law firm established in 2011. Since our inception, we have been recognised as one of Australia’s premier firms, providing strategic and proactive dispute resolution services.
+                        </p>
+                        <p>
+                            We primarily serve insurers, employers, scheme agents, self-insurers, and corporations, delivering outcomes that are both cost-effective and sustainable. Our approach is not just about legal representation; it's about building lasting partnerships based on trust and results.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-10 pt-10 border-t border-gray-100 flex gap-12">
+                        <div>
+                            <div class="text-4xl font-serif font-bold text-navy-900 mb-1">12+</div>
+                            <div class="text-xs uppercase tracking-widest text-gray-500">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-serif font-bold text-navy-900 mb-1">4</div>
+                            <div class="text-xs uppercase tracking-widest text-gray-500">Office Locations</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-serif font-bold text-navy-900 mb-1">Top</div>
+                            <div class="text-xs uppercase tracking-widest text-gray-500">Tier Service</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="absolute -right-10 -bottom-10 w-2/3 h-2/3 bg-gray-100 -z-10"></div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4 mt-12">
+                            <div class="h-64 overflow-hidden rounded-sm shadow-lg">
+                                <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f7cdf2f472-87396aeb0507d858c6ba.png" alt="modern law firm meeting room glass walls detail close up of hands shaking over document" />
+                            </div>
+                            <div class="h-48 bg-navy-900 p-8 flex flex-col justify-center items-center text-center rounded-sm shadow-lg">
+                                <i class="fa-solid fa-scale-balanced text-4xl text-gold-400 mb-4"></i>
+                                <span class="text-white font-serif italic text-xl">"Justice through Integrity"</span>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="h-48 bg-gray-50 p-8 flex flex-col justify-center items-center text-center rounded-sm">
+                                <span class="text-navy-900 font-bold uppercase tracking-widest text-sm">Our Focus</span>
+                                <span class="text-accent-cyan text-3xl font-serif font-bold mt-2">Results</span>
+                            </div>
+                            <div class="h-80 overflow-hidden rounded-sm shadow-lg">
+                                <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6a75c99a05-12d28019501b0e870f89.png" alt="vertical shot of modern skyscraper glass facade reflecting blue sky corporate architecture" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section id="values" class="py-24 bg-navy-900 text-white relative overflow-hidden">
+        <!-- Subtle pattern overlay -->
+        <div class="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        
+        <div class="max-w-[1440px] mx-auto px-8 md:px-12 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h4 class="text-gold-400 font-bold uppercase tracking-widest text-sm mb-4">Our DNA</h4>
+                <h2 class="text-4xl font-serif font-bold text-white mb-6">Values That Define Us</h2>
+                <p class="text-gray-300 text-lg font-light">
+                    Our firm is built on a bedrock of principles that guide every decision, every case, and every client interaction.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Value 1 -->
+                <div class="group bg-white/5 backdrop-blur-sm p-8 border border-white/10 hover:bg-white hover:text-navy-900 transition-all duration-300 cursor-default">
+                    <div class="w-12 h-12 rounded-full bg-gold-500 flex items-center justify-center mb-6 text-white group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gem text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-3 group-hover:text-navy-900">Quality</h3>
+                    <p class="text-sm text-gray-400 group-hover:text-gray-600 leading-relaxed">
+                        Uncompromising standards in legal advice and representation.
+                    </p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="group bg-white/5 backdrop-blur-sm p-8 border border-white/10 hover:bg-white hover:text-navy-900 transition-all duration-300 cursor-default">
+                    <div class="w-12 h-12 rounded-full bg-navy-700 flex items-center justify-center mb-6 text-white group-hover:bg-gold-500 transition-colors">
+                        <i class="fa-solid fa-shield-halved text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-3 group-hover:text-navy-900">Integrity</h3>
+                    <p class="text-sm text-gray-400 group-hover:text-gray-600 leading-relaxed">
+                        Honest, ethical, and transparent conduct in all matters.
+                    </p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="group bg-white/5 backdrop-blur-sm p-8 border border-white/10 hover:bg-white hover:text-navy-900 transition-all duration-300 cursor-default">
+                    <div class="w-12 h-12 rounded-full bg-navy-700 flex items-center justify-center mb-6 text-white group-hover:bg-gold-500 transition-colors">
+                        <i class="fa-solid fa-handshake-simple text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-3 group-hover:text-navy-900">Loyalty</h3>
+                    <p class="text-sm text-gray-400 group-hover:text-gray-600 leading-relaxed">
+                        Steadfast dedication to our clients' long-term interests.
+                    </p>
+                </div>
+
+                <!-- Value 4 -->
+                <div class="group bg-white/5 backdrop-blur-sm p-8 border border-white/10 hover:bg-white hover:text-navy-900 transition-all duration-300 cursor-default">
+                    <div class="w-12 h-12 rounded-full bg-navy-700 flex items-center justify-center mb-6 text-white group-hover:bg-gold-500 transition-colors">
+                        <i class="fa-solid fa-user-check text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-3 group-hover:text-navy-900">Accountability</h3>
+                    <p class="text-sm text-gray-400 group-hover:text-gray-600 leading-relaxed">
+                        Taking ownership of outcomes and delivering on promises.
+                    </p>
+                </div>
+
+                <!-- Value 5 -->
+                <div class="group bg-white/5 backdrop-blur-sm p-8 border border-white/10 hover:bg-white hover:text-navy-900 transition-all duration-300 cursor-default">
+                    <div class="w-12 h-12 rounded-full bg-navy-700 flex items-center justify-center mb-6 text-white group-hover:bg-gold-500 transition-colors">
+                        <i class="fa-solid fa-star text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-3 group-hover:text-navy-900">Dedication</h3>
+                    <p class="text-sm text-gray-400 group-hover:text-gray-600 leading-relaxed">
+                        Relentless pursuit of superior client service and results.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Timeline / Milestones -->
+    <section id="history" class="py-24 bg-slate-50">
+        <div class="max-w-[1440px] mx-auto px-8 md:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Left: Content -->
+                <div class="order-2 lg:order-1">
+                    <h4 class="text-gold-500 font-bold uppercase tracking-widest text-sm mb-4">Our Journey</h4>
+                    <h2 class="text-4xl font-serif font-bold text-navy-900 mb-8">A Legacy of Growth</h2>
+                    
+                    <div class="relative pl-8 border-l border-gray-200 space-y-12">
+                        <!-- Item 1 -->
+                        <div class="relative">
+                            <div class="absolute -left-[39px] top-1 w-5 h-5 rounded-full border-4 border-white bg-navy-900 shadow-md"></div>
+                            <div class="text-2xl font-serif font-bold text-gold-500 mb-2">2011</div>
+                            <h3 class="text-lg font-bold text-navy-900 mb-2">Establishment</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Gair Legal was founded with a vision to provide specialised, high-quality legal services to the insurance and corporate sectors.
+                            </p>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="relative">
+                            <div class="absolute -left-[39px] top-1 w-5 h-5 rounded-full border-4 border-white bg-gray-300"></div>
+                            <div class="text-2xl font-serif font-bold text-navy-900 mb-2">2015</div>
+                            <h3 class="text-lg font-bold text-navy-900 mb-2">Expansion to Newcastle</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Responding to client demand, we opened our Newcastle office to better serve the Hunter region.
+                            </p>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="relative">
+                            <div class="absolute -left-[39px] top-1 w-5 h-5 rounded-full border-4 border-white bg-gray-300"></div>
+                            <div class="text-2xl font-serif font-bold text-navy-900 mb-2">2018</div>
+                            <h3 class="text-lg font-bold text-navy-900 mb-2">Melbourne Office Launch</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                We expanded our national footprint with a permanent presence in Melbourne, Victoria.
+                            </p>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="relative">
+                            <div class="absolute -left-[39px] top-1 w-5 h-5 rounded-full border-4 border-white bg-gold-500 shadow-md animate-pulse"></div>
+                            <div class="text-2xl font-serif font-bold text-navy-900 mb-2">Today</div>
+                            <h3 class="text-lg font-bold text-navy-900 mb-2">National Leader</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Recognised as a premier firm with a team of expert lawyers dedicated to exceeding client expectations across Australia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Visual -->
+                <div class="order-1 lg:order-2 relative h-full min-h-[500px]">
+                    <div class="sticky top-32">
+                        <div class="relative h-[600px] w-full rounded-sm overflow-hidden shadow-2xl">
+                            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5a058f47e5-03d46f47816cbb6d1f5a.png" alt="abstract architectural shot of modern office building facade with glass and steel looking up towards blue sky, representing growth and stability" />
+                            <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-navy-900/90 to-transparent p-10">
+                                <p class="text-white text-xl font-serif italic">
+                                    "We don't just practice law; we define the standard for legal excellence."
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Decorative element -->
+                        <div class="absolute -top-6 -right-6 w-32 h-32 border-4 border-gold-500/30 z-[-1]"></div>
+                        <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-gray-200 z-[-1]"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Differentiators / Why Choose Us -->
+    <section id="differentiators" class="py-24 bg-white">
+        <div class="max-w-[1440px] mx-auto px-8 md:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h4 class="text-gold-500 font-bold uppercase tracking-widest text-sm mb-4">Why Gair Legal</h4>
+                <h2 class="text-4xl font-serif font-bold text-navy-900 mb-6">The Gair Legal Difference</h2>
+                <p class="text-gray-600 text-lg">
+                    In a crowded legal landscape, we stand apart through our commitment to innovation, sustainability, and exceptional client relationships.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-gray-50 p-10 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-16 h-16 bg-white shadow-sm flex items-center justify-center mb-8 text-navy-900 text-2xl group-hover:bg-navy-900 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-navy-900 mb-4">Client-Centric Approach</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        We prioritize building exceptional client relationships. We take the time to understand your business, your goals, and your challenges.
+                    </p>
+                    <div class="w-12 h-1 bg-gold-500 transform origin-left group-hover:scale-x-150 transition-transform"></div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-gray-50 p-10 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-16 h-16 bg-white shadow-sm flex items-center justify-center mb-8 text-navy-900 text-2xl group-hover:bg-navy-900 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-piggy-bank"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-navy-900 mb-4">Cost-Effective Outcomes</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Our strategic approach focuses on early resolution and minimizing costs, delivering value without compromising on quality.
+                    </p>
+                    <div class="w-12 h-1 bg-gold-500 transform origin-left group-hover:scale-x-150 transition-transform"></div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-gray-50 p-10 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-16 h-16 bg-white shadow-sm flex items-center justify-center mb-8 text-navy-900 text-2xl group-hover:bg-navy-900 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-navy-900 mb-4">Sustainable Practices</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        We are committed to sustainable business practices, reducing our environmental footprint while maintaining operational excellence.
+                    </p>
+                    <div class="w-12 h-1 bg-gold-500 transform origin-left group-hover:scale-x-150 transition-transform"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Preview -->
+    <section id="leadership" class="py-24 bg-navy-900 relative">
+         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/shattered-island.png')] opacity-10"></div>
+         <div class="max-w-[1440px] mx-auto px-8 md:px-12 relative z-10">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="w-full md:w-1/2">
+                    <div class="relative h-[600px] w-full">
+                        <div class="absolute top-0 right-0 w-3/4 h-full bg-gold-500/10 rounded-sm transform translate-x-4 translate-y-4"></div>
+                        <div class="relative w-full h-full overflow-hidden rounded-sm shadow-2xl">
+                             <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://devshorifultechnosys.com/wp-content/uploads/2026/01/team_0006_2018-48-355r_bw.jpg" alt="portrait of senior male law firm partner standing in modern office with arms crossed confident expression looking at camera" />
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 text-white">
+                    <h4 class="text-gold-400 font-bold uppercase tracking-widest text-sm mb-4">Leadership</h4>
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-8">Guided by Experience</h2>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-8">
+                        "At Gair Legal, we believe that true legal excellence comes from a deep understanding of our clients' industries and a proactive mindset. We don't just react to problems; we anticipate them and provide strategic solutions."
+                    </p>
+                    <div class="flex items-center gap-4 mb-10">
+                        <div class="h-px w-12 bg-gold-400"></div>
+                        <div>
+                            <p class="font-serif font-bold text-xl">Anthony Cummins</p>
+                            <p class="text-sm text-gray-400 uppercase tracking-wider">Director</p>
+                        </div>
+                    </div>
+                    <a href="#team" class="inline-flex items-center gap-3 text-gold-400 font-bold uppercase tracking-widest text-sm hover:text-white transition-colors group">
+                        Meet Our Team <i class="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <!-- Locations Teaser -->
+    <section id="locations-teaser" class="py-20 bg-white border-b border-gray-100">
+        <div class="max-w-[1440px] mx-auto px-8 md:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div>
+                    <h3 class="text-2xl font-serif font-bold text-navy-900 mb-2">National Reach</h3>
+                    <p class="text-gray-600">Serving clients across NSW and Victoria.</p>
+                </div>
+                <div class="flex gap-4 md:gap-12 flex-wrap justify-center">
+                    <div class="flex items-center gap-3 text-gray-500">
+                        <i class="fa-solid fa-location-dot text-gold-500"></i>
+                        <span class="font-medium">Northern Beaches</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-gray-500">
+                        <i class="fa-solid fa-location-dot text-gold-500"></i>
+                        <span class="font-medium">Chatswood</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-gray-500">
+                        <i class="fa-solid fa-location-dot text-gold-500"></i>
+                        <span class="font-medium">Newcastle</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-gray-500">
+                        <i class="fa-solid fa-location-dot text-gold-500"></i>
+                        <span class="font-medium">Melbourne</span>
+                    </div>
+                </div>
+                <a href="#locations" class="px-6 py-3 border border-navy-900 text-navy-900 font-bold uppercase tracking-widest text-xs hover:bg-navy-900 hover:text-white transition-colors">
+                    View Offices
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-24 bg-gray-50">
+        <div class="max-w-[1440px] mx-auto px-8 md:px-12">
+            <div class="bg-white p-12 md:p-20 shadow-2xl rounded-sm relative overflow-hidden text-center">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-navy-900 via-gold-500 to-navy-900"></div>
+                
+                <h2 class="text-4xl font-serif font-bold text-navy-900 mb-6">Ready to Experience the Difference?</h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto mb-10">
+                    Partner with a firm that prioritises your success. Contact us today for a confidential consultation.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="px-10 py-4 bg-navy-900 text-white font-bold uppercase tracking-widest hover:bg-gold-500 transition-all duration-300 shadow-lg">
+                        Contact Us
+                    </a>
+                    <a href="tel:+61212345678" class="px-10 py-4 border border-navy-900 text-navy-900 font-bold uppercase tracking-widest hover:bg-navy-900 hover:text-white transition-all duration-300">
+                        +61 2 1234 5678
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-black border-t border-gray-800 pt-16 pb-8">
+        <div class="max-w-[1440px] mx-auto px-8 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Footer Logo Column -->
+                <div class="space-y-6">
+                    <img src="https://devshorifultechnosys.com/wp-content/uploads/2026/01/GairLegal-Logo-wht.png" alt="Gair Legal Footer Logo" class="h-20 w-auto object-contain mb-4">
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Legal Provider For Insurers & Employers. Dedicated to superior client service, integrity, and cost-effective outcomes.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h5 class="text-white font-bold uppercase tracking-widest text-sm mb-6">Quick Links</h5>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-gold-400 transition-colors text-sm">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-gold-400 transition-colors text-sm">About Us</a></li>
+                        <li><a href="#expertise" class="text-gray-400 hover:text-gold-400 transition-colors text-sm">Expertise</a></li>
+                        <li><a href="#team" class="text-gray-400 hover:text-gold-400 transition-colors text-sm">Our Team</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-gold-400 transition-colors text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Practice Areas -->
+                <div>
+                    <h5 class="text-white font-bold uppercase tracking-widest text-sm mb-6">Practice Areas</h5>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-gold-400 transition-colors text-sm">Workers Compensation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-gold-400 transition-colors text-sm">Work Injury Damages</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-gold-400 transition-colors text-sm">Catastrophic Injuries</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-gold-400 transition-colors text-sm">Employment Law</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-gold-400 transition-colors text-sm">Public Liability</a></li>
+                    </ul>
+                </div>
+
+                <!-- Locations -->
+                <div>
+                    <h5 class="text-white font-bold uppercase tracking-widest text-sm mb-6">Offices</h5>
+                    <ul class="space-y-3">
+                        <li class="text-gray-400 text-sm">Dee Why, NSW</li>
+                        <li class="text-gray-400 text-sm">Chatswood, NSW</li>
+                        <li class="text-gray-400 text-sm">Newcastle, NSW</li>
+                        <li class="text-gray-400 text-sm">Melbourne, VIC</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-xs">
+                    &copy; 2026 Gair Legal. All rights reserved.
+                </p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-500 text-xs hover:text-gold-400">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 text-xs hover:text-gold-400">Terms of Use</a>
+                    <a href="#" class="text-gray-500 text-xs hover:text-gold-400">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for header behavior on scroll (consistent with main screen)
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+                header.classList.replace('h-24', 'h-20');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.replace('h-20', 'h-24');
+            }
+        });
+    </script>
+</body>
+</html>
